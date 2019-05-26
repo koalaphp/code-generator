@@ -45,7 +45,7 @@ $isSucc = $userModelGenerator->genModelCodeByDbNameAndTableName("test", "test_us
 <?php
 class CustomDaoTpl
 {
-	public static $template = <<<EOT
+    public static $template = <<<EOT
 <?php
 namespace Library\Dao\%dbNamespace%;
 use Koala\Database\SimpleDao;
@@ -62,7 +62,7 @@ use Koala\Database\SimpleDao;
  */
 class %tableDaoName% extends SimpleDao
 {
-	// 连接的数据库
+    // 连接的数据库
     protected \$database = '%dbName%';
     // 表名
     protected \$table = '%tableName%';
@@ -101,7 +101,7 @@ $isSucc = $userDaoGenerator->genDaoCodeByDbNameAndTableName("test", "test_user")
 <?php
 class CustomModelTpl
 {
-	public static $template = <<<EOT
+    public static $template = <<<EOT
 <?php
 namespace Library\Dao\%dbNamespace%;
 
