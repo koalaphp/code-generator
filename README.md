@@ -4,7 +4,6 @@
 
 通过命令行的方式，根据配置的模板，连接MySQL的数据库的表，获取表结构信息，并生成对应的Dao文件和Model文件。
 
-
 ## 1. 快速开始
 
 进行基本配置
@@ -121,7 +120,7 @@ EOT;
 }
 ```
 
-配置个性化Model模板，生成对应的Model文件
+配置个性化Model模板，生成对应的 Model 文件
 
 ```
 \Koala\CodeGenerator\Template\ModelTpl::$template = CustomModelTpl::$template;
@@ -131,3 +130,4 @@ $userModelGenerator->setFullParentDir(OUTPUT_PATH);
 $isSucc = $userModelGenerator->genModelCodeByDbNameAndTableName("test", "user"); // test是数据库名字，user是表名
 $isSucc = $userModelGenerator->genModelCodeByDbNameAndTableName("test", "test_user"); // test是数据库名字，test_user是表名
 ```
+
